@@ -29,23 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Form_Progress = new System.Windows.Forms.ProgressBar();
             this.Form_Browse_Button = new System.Windows.Forms.Button();
             this.Form_Browse_Text = new System.Windows.Forms.TextBox();
             this.Form_Start = new System.Windows.Forms.Button();
             this.Form_Text = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Form_Progress
-            // 
-            this.Form_Progress.Location = new System.Drawing.Point(12, 141);
-            this.Form_Progress.Name = "Form_Progress";
-            this.Form_Progress.Size = new System.Drawing.Size(869, 23);
-            this.Form_Progress.TabIndex = 0;
-            // 
             // Form_Browse_Button
             // 
-            this.Form_Browse_Button.Location = new System.Drawing.Point(806, 73);
+            this.Form_Browse_Button.Location = new System.Drawing.Point(806, 68);
             this.Form_Browse_Button.Name = "Form_Browse_Button";
             this.Form_Browse_Button.Size = new System.Drawing.Size(75, 23);
             this.Form_Browse_Button.TabIndex = 1;
@@ -55,7 +47,7 @@
             // 
             // Form_Browse_Text
             // 
-            this.Form_Browse_Text.Location = new System.Drawing.Point(12, 75);
+            this.Form_Browse_Text.Location = new System.Drawing.Point(12, 68);
             this.Form_Browse_Text.Name = "Form_Browse_Text";
             this.Form_Browse_Text.Size = new System.Drawing.Size(788, 20);
             this.Form_Browse_Text.TabIndex = 2;
@@ -64,7 +56,7 @@
             // 
             // Form_Start
             // 
-            this.Form_Start.Location = new System.Drawing.Point(606, 101);
+            this.Form_Start.Location = new System.Drawing.Point(606, 97);
             this.Form_Start.Name = "Form_Start";
             this.Form_Start.Size = new System.Drawing.Size(275, 32);
             this.Form_Start.TabIndex = 3;
@@ -88,13 +80,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 176);
+            this.ClientSize = new System.Drawing.Size(893, 141);
             this.Controls.Add(this.Form_Text);
             this.Controls.Add(this.Form_Start);
             this.Controls.Add(this.Form_Browse_Text);
             this.Controls.Add(this.Form_Browse_Button);
-            this.Controls.Add(this.Form_Progress);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KF2 Map Name Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -103,8 +97,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ProgressBar Form_Progress;
         private System.Windows.Forms.Button Form_Browse_Button;
         private System.Windows.Forms.TextBox Form_Browse_Text;
         private System.Windows.Forms.Button Form_Start;
